@@ -15,7 +15,6 @@
 ## 3. Đóng góp cụ thể
 
 - Phần của thành viên: xác định CP4 là phần cần hoàn thành, rà mã host và các shape liên quan CP4; chạy host gate, ma trận student và crash suite; kiểm tra regression CP3 về crash/resume, handoff và trace/stdout; cập nhật kết quả, giới hạn hidden và artifact vào báo cáo nhóm, kiểm tra và ghi kết quả vào `report/team/group_report.md`, cung cấp thông tin lập báo cáo cá nhân.
-- Phần Codex hỗ trợ: 
 - Kết quả kiểm tra: host `68 passed`; ma trận student `248 passed`; crash suite `20/20`.
 - Chưa ghi nhận code hoặc test mới do thành viên trực tiếp tạo trong phiên này. Không quy các thay đổi triển khai CP2–CP3 trong commit trước cho thành viên nếu chưa có bằng chứng đóng góp riêng.
 
