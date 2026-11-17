@@ -11,7 +11,7 @@
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
+|   1 | Phan Nguyễn Phan Anh | 2A202604004 | pnpa102004@gmail.com | alpha19102004 | CP5 — benchmark và kiểm thử đánh giá |
 |   2 |        |      |       |        |         |
 
 Gợi ý chia vai:
@@ -25,7 +25,7 @@ Gợi ý chia vai:
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
-| | | | |
+| [Phan Nguyễn Phan Anh — 2A202604004](report/team/2A202604004_PhanNguyenPhanAnh.md) | CP5 — benchmark, test đánh giá và phân tích lựa chọn shape; có Codex hỗ trợ | [`75dcd12`](https://github.com/czx04/K5-L3B-DAY08-abcd-FromWorkflowsToAgents/commit/75dcd12) | `src/tests/test_cp5_benchmark.py`: 5 test về so sánh công bằng, claim không nhãn, đổi mã và ticket giả mạo |
 
 ## Cá nhân
 
