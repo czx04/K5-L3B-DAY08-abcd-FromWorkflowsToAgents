@@ -14,7 +14,7 @@
 
 ## 3. Đóng góp cụ thể
 
-- Phần của thành viên: xác định CP4 là phần cần hoàn thành, rà mã host và các shape liên quan CP4; chạy host gate, ma trận student và crash suite; kiểm tra regression CP3 về crash/resume, handoff và trace/stdout; cập nhật kết quả, giới hạn hidden và artifact vào báo cáo nhóm, kiểm tra và ghi kết quả vào `report/team/group_report.md`, lập báo cáo cá nhân.
+- Phần của thành viên: xác định CP4 là phần cần hoàn thành, yêu cầu chạy kiểm tra và ghi kết quả vào `report/team/group_report.md`,  rà mã host và các shape liên quan CP4; chạy host gate, ma trận student và crash suite; kiểm tra regression CP3 về crash/resume, handoff và trace/stdout; cập nhật kết quả, giới hạn hidden và artifact vào báo cáo nhóm, lập báo cáo cá nhân.
 - Kết quả kiểm tra: host `68 passed`; ma trận student `248 passed`; crash suite `20/20`.
 
 
