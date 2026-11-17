@@ -1,4 +1,4 @@
-# Báo cáo nhóm — Lab 8 LogiX-VN
+﻿# Báo cáo nhóm — Lab 8 LogiX-VN
 
 Tối đa 5 trang ngoài phụ lục. Số liệu lấy từ file trong `src/reports/`, không chép tay từ terminal.
 
@@ -47,3 +47,11 @@ MockLLM không phải model sản xuất; latency là `unavailable`. Nêu thêm 
 ## 8. Tài liệu tham khảo
 
 ...
+
+## Bổ sung kết quả checkpoint 4
+
+- Host gate: `python -m pytest -q` — **54 passed, 248 deselected**.
+- Ma trận public: `python -m pytest -q -m student -o addopts=` — **248 passed, 54 deselected** trên bốn shape; gồm T01–T14 và các kịch bản retry/crash T11–T12.
+- Crash suite: `python -m lab8.crash_test --count 20 --out reports/crash.json` — **20/20**, không có scenario lỗi. Báo cáo máy sinh tại `src/reports/crash.json`.
+- Approval và dữ liệu: các test host cùng ma trận public đều pass; không có bypass approval hay forbidden secret/PII marker trong các case public. Host giới hạn refund theo approval, số tiền đã thanh toán và entitlement theo đơn; handoff dùng allowlist và investigator chỉ có tool đọc.
+- Giới hạn: kết quả này chưa thay cho hidden grading của giảng viên; hidden pack và nhãn không có trong repo học viên. Trace/PII của hidden sẽ được kiểm tra ở grader riêng.
