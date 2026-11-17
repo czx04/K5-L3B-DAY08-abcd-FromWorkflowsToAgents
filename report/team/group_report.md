@@ -50,8 +50,9 @@ MockLLM không phải model sản xuất; latency là `unavailable`. Nêu thêm 
 
 ## Bổ sung kết quả checkpoint 4
 
-- Host gate: `python -m pytest -q` — **54 passed, 248 deselected**.
-- Ma trận public: `python -m pytest -q -m student -o addopts=` — **248 passed, 54 deselected** trên bốn shape; gồm T01–T14 và các kịch bản retry/crash T11–T12.
-- Crash suite: `python -m lab8.crash_test --count 20 --out reports/crash.json` — **20/20**, không có scenario lỗi. Báo cáo máy sinh tại `src/reports/crash.json`.
-- Approval và dữ liệu: các test host cùng ma trận public đều pass; không có bypass approval hay forbidden secret/PII marker trong các case public. Host giới hạn refund theo approval, số tiền đã thanh toán và entitlement theo đơn; handoff dùng allowlist và investigator chỉ có tool đọc.
-- Giới hạn: kết quả này chưa thay cho hidden grading của giảng viên; hidden pack và nhãn không có trong repo học viên. Trace/PII của hidden sẽ được kiểm tra ở grader riêng.
+- Host gate: `python -m pytest -q` — **68 passed, 248 deselected**.
+- Ma trận public: `python -m pytest -q -m student -o addopts=` — **248 passed, 68 deselected** trên bốn shape; gồm T01–T14 và retry/crash T11–T12.
+- Regression CP3: `tests/test_cp3_durability_handoff.py` được tích hợp từ `origin/main`; các kiểm tra crash/resume, amount conflict, handoff allowlist và trace/stdout đều pass trong host gate.
+- Crash suite: `python -m lab8.crash_test --count 20 --out reports/crash.json` — **20/20**, không có scenario lỗi. Artifact tại `src/reports/crash.json`.
+- Approval và dữ liệu: host tests và ma trận public pass; không có bypass approval hay forbidden secret/PII marker trong các case public. Host giới hạn refund theo approval, số tiền đã thanh toán và entitlement theo đơn; investigator chỉ có tool đọc.
+- Giới hạn: chưa có kết quả hidden grading của giảng viên; không kết luận pass rate hoặc leak counts trên hidden pack.
