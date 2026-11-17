@@ -4,7 +4,7 @@
 
 - Họ tên: Nguyễn Hữu Mạnh
 - MSSV: 2A202604015
-- Email: Chưa cung cấp
+- Email: nghmanh04@gmail.com
 - GitHub: nghmanh04
 
 ## 2. Phần việc phụ trách
